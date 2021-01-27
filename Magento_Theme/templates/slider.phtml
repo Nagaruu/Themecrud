@@ -1,0 +1,67 @@
+<h1>This is test page</h1>
+<div id="demo">
+ 
+    <div id="owl-demo" class="owl-carousel">
+ 
+        <div class="item">
+            <?php
+                echo $block->getLayout()
+                        ->createBlock('Magento\Cms\Block\Block')
+                        ->setBlockId('carousel2')
+                        ->toHtml();
+            ?>
+        </div>
+        <div class="item">
+            <?php
+                echo $block->getLayout()
+                        ->createBlock('Magento\Cms\Block\Block')
+                        ->setBlockId('carousel2')
+                        ->toHtml();
+            ?>
+        </div>
+        <div class="item">
+            <?php
+                echo $block->getLayout()
+                        ->createBlock('Magento\Cms\Block\Block')
+                        ->setBlockId('carousel2')
+                        ->toHtml();
+            ?>
+        </div>
+        <div class="item">
+            <?php
+                echo $block->getLayout()
+                        ->createBlock('Magento\Cms\Block\Block')
+                        ->setBlockId('carousel2')
+                        ->toHtml();
+            ?>
+        </div>
+        <div class="item">
+            <?php
+                echo $block->getLayout()
+                        ->createBlock('Magento\Cms\Block\Block')
+                        ->setBlockId('carousel2')
+                        ->toHtml();
+            ?>
+        </div>
+ 
+    </div>
+</div>
+ 
+<script>
+    require([
+        'jquery',
+        'owlcarousel',
+        'test'
+        ], function () {
+            'use strict';
+            jQuery.noConflict();
+                jQuery(".owl-carousel").owlCarousel({
+                    nav: true, // Show next and prev buttons
+                    navText:["<",">"], //show prev next
+                    loop: true,
+                    autoplay: true, //Set AutoPlay  
+                    autoplayHoverPause: true, //stop when mouse on carousel
+                    items : 2
+          });
+    });
+</script>
